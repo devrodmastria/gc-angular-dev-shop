@@ -23,17 +23,4 @@ export class DevCatalogComponent {
     })
   }
 
-  getDevByLastName(name: string): Complete {
-
-    console.log("Dev Catalog by name: " + name);
-    let devList : Complete[] = this.devResponse.complete as Complete[];
-    return devList.find(dev => dev.lastName == name) as Complete;
-  }
-
-  debugLog(info: string){
-
-    let details = this.getDevByLastName(info).innovation;
-    console.log(">>>> "+ details);
-  }
-
 }

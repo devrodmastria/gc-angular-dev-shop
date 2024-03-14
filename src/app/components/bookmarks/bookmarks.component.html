@@ -5,10 +5,9 @@
 }
 @else {
     @for (item of bookmarkList; track $index) {
+        <p>{{item.firstName}} {{item.lastName}}</p>
         <ul>
-            <li>{{item.firstName}}</li>
-            <li>{{item.innovation}}</li>
-            <li>{{item.year}}</li>
+            <li>{{item.innovation}} in <b>{{item.year}}</b></li>
         </ul>
     }
 }

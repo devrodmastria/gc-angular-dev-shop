@@ -7,7 +7,7 @@
     @for (dev of devResponse.complete; track $index) {
         <tr>
             <td>{{dev.firstName}} {{dev.lastName}}</td>
-            <td><button routerLink="/dev/{{dev.lastName}}" (click)="debugLog(dev.lastName)">Explore</button></td>
+            <td><button routerLink="/dev/{{dev.lastName}}">Explore</button></td>
         </tr>
     }
 </table>
