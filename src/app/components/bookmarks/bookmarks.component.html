@@ -1,0 +1,15 @@
+<hr>
+<p><b>Bookmarks</b>
+@if(bookmarkList.length == 0){
+    <p>Nothing saved yet</p>
+}
+@else {
+    @for (item of bookmarkList; track $index) {
+        <ul>
+            <li>{{item.firstName}}</li>
+            <li>{{item.innovation}}</li>
+            <li>{{item.year}}</li>
+        </ul>
+    }
+}
+<hr>
